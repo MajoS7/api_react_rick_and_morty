@@ -8,8 +8,8 @@ export const Home =() =>{
     return(
         <div className="ContainerPrincipal">
             <Header/>
-            {/* <Select/>
-            <AllCards/>
+            <Select/>
+            {/*<AllCards/>
             <Footer/> */}
         </div>
     )

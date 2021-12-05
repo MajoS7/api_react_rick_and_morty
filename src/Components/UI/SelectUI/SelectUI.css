@@ -1,0 +1,11 @@
+.SelectUI{
+    text-align: center;
+    width: 21rem;
+    cursor: pointer;
+    padding: 2vh 0vh;
+    color:#7b7b7b;
+    background: #f0f0f0;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    transition: all 0.25s ease;
+}
