@@ -1,0 +1,9 @@
+.TitleHeader{
+    color:#10b0c8;
+    font-family: 'Creepster', cursive;
+    -webkit-text-stroke: 0.1vh #d7e170;
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
