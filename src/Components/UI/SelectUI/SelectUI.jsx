@@ -1,26 +1,16 @@
 import './SelectUI.css';
-import React, { useEffect } from 'react';
 
-
-export const SelectUI =(prueba)=>{
-
-    
-    console.log(prueba);
-    
-    // const llenar=()=>{
-    //     malp.map(item=>{
-    //         console.log(item.name);
-    //         return item.name;
-    //     })
-    // }
-    // useEffect(() =>{
-    //     llenar('')
-    // },[])
+export const SelectUI =({prueba})=>{
 
     return(
         <select  className="SelectUI">
             <option></option>
             <option >All Cards</option>
+            {
+                prueba.map(element=>(
+                    <option value={element.id}>{element.name}</option>
+                ))
+            }
         </select>
     );
 }
