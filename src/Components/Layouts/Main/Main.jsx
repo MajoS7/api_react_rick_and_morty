@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import './Select.css';
+import './Main.css';
+import { AllCards } from '../AllCards/AllCards';
 import { SelectUI } from "../../UI/SelectUI/SelectUI";
 
 
-export const Select =()=>{
+export const Main =()=>{
 
     const [element, setElement] = useState([{name:'Select a name',image:''}]);
     const URL = 'https://rickandmortyapi.com/api/character/';
@@ -17,9 +18,15 @@ export const Select =()=>{
         FetchApi('')
     },[])
 
+    const PruebaCard =()=>{
+        
+
+    }
+
     return(
-        <div className="Select">
+        <div className="Main">
             <SelectUI prueba={element}/>
+            {/* <AllCards /> */}
         </div>
     );
 }
