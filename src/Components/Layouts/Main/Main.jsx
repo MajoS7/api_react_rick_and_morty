@@ -7,6 +7,7 @@ import { SelectUI } from "../../UI/SelectUI/SelectUI";
 export const Main =()=>{
 
     const [element, setElement] = useState([{name:'Select a name',image:''}]);
+    const [oneElement, setOneElement]=useState({name:"rick", image:""})
     const URL = 'https://rickandmortyapi.com/api/character/';
 
     const FetchApi=()=> { 
@@ -18,15 +19,20 @@ export const Main =()=>{
         FetchApi('')
     },[])
 
-    const PruebaCard =()=>{
-        
-
+    const Cards =(event)=>{
+        element.map(item=>{
+            if (event.target.value==item.id){
+                setOneElement(item);
+            }
+            
+        })
+        // if(event.target.value==)
     }
 
     return(
         <div className="Main">
-            <SelectUI prueba={element}/>
-            {/* <AllCards /> */}
+            <SelectUI prueba={element} prueba1={Cards}/>
+            <AllCards pruebas={oneElement}/>  
         </div>
     );
 }

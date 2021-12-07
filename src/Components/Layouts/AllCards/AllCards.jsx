@@ -1,7 +1,7 @@
 import { Card } from "../../UI/Card/Card";
 
-export const AllCards =()=>{
+export const AllCards =({pruebas})=>{
     return(
-        <Card/>
+        <Card pruebas2={pruebas}/>
     );
 }
