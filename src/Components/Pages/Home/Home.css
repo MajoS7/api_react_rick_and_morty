@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Creepster&display=swap');
+
+
+.ContainerPrincipal{
+    font-family: 'Baloo Bhai 2', cursive;  
+    background-color: #0a0a0a;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}

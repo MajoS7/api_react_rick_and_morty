@@ -1,0 +1,13 @@
+.card{
+    color: #10b0c8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #10b0c8 5px ridge;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 2%;
+}
+.imageCard{
+    border-radius: 20px;
+}
