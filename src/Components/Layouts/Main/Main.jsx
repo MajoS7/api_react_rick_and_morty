@@ -34,7 +34,7 @@ export const Main =()=>{
     return(
         <div className="Main">
             <SelectUI objectResult={element} eventOneObject={manageCards}/>
-            <AllCards pruebas={oneElement}/>  
+            <AllCards oneObjectResult={oneElement}/>  
         </div>
     );
 }
