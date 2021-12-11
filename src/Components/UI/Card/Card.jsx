@@ -1,11 +1,11 @@
 import './Card.css';
 
-export const Card = ({pruebas3}) => {
+export const Card = ({objectCard}) => {
 
     return(
         <div className="card">
-            <img className="imageCard" src={pruebas3.image} alt={pruebas3.name} />
-            <h2>{pruebas3.name}</h2>
+            <img className="imageCard" src={objectCard.image} alt={objectCard.name} />
+            <h2>{objectCard.name}</h2>
         </div>
     ) 
 };

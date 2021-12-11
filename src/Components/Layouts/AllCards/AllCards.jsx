@@ -1,31 +1,21 @@
 import { Card } from "../../UI/Card/Card";
 import './AllCards.css';
 
-export const AllCards =({pruebas})=>{
+export const AllCards =({oneObjectResult})=>{
 
-    if (pruebas.length==20){
+    if (oneObjectResult.length==20){
         return(
             <div className="AllCards">
-                {pruebas.map(it=>(
-                    <Card pruebas3={it}/>
+                {oneObjectResult.map(item=>(
+                    <Card objectCard={item}/>
                 ))
                 }
             </div>
-        );
-        
+        ); 
     }
-    
-        return(
-            <div className="AllCards">
-                <Card pruebas3={pruebas}/>
-            </div>
-           
-         );
-    
-        
-    
-    
-    
-    
-    
+    return(
+        <div className="AllCards">
+            <Card objectCard={oneObjectResult}/>
+        </div>
+    );
 }
