@@ -8,7 +8,7 @@ export const Home =() =>{
         <div className="ContainerPrincipal">
             <Header/>
             <Main/>
-            {/*<Footer/> */}
+            <Footer/> 
         </div>
     )
 
