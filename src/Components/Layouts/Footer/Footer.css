@@ -1,0 +1,10 @@
+.posicionfooter{
+    margin-top: 2vh;
+    background-color:#C0C0C0;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 5vh;
+    font-size: 100%;
+}
