@@ -1,14 +1,13 @@
 import './SelectUI.css';
 
-
-export const SelectUI =({prueba, prueba1})=>{
+export const SelectUI =({objectResult, eventOneObject})=>{
 
     return(
-        <select onChange={prueba1}  className="SelectUI">
+        <select onChange={eventOneObject}  className="SelectUI">
             <option>Select a Name</option>
             <option >All Cards</option>
             {
-                prueba.map(element=>(
+                objectResult.map(element=>(
                     <option value={element.id}>{element.name}</option>
                 ))
             }
